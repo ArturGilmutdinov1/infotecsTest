@@ -1,5 +1,5 @@
 import { connect } from "react-redux"
-import { getUsers } from "../BLL/usersReducer"
+import { getUsers } from "../../BLL/usersReducer"
 import Users from "./users"
 import React from "react"
 
@@ -12,18 +12,18 @@ class UsersConteiner extends React.Component {
 
 
    render() {
-      return <>
-         {<Users users={this.props.users}
+      return <main>
+         {<Users
+            users={this.props.users}
          />
          }
-      </>
+      </main>
    };
 };
 
 
 
 const mapStateToProps = (state) => {
-   debugger
    return {
       users: state.usersPage.users
    }

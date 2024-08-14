@@ -1,0 +1,16 @@
+table{
+   width: 100%;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+table, th, td {
+   white-space: nowrap;
+   text-align:center;
+   min-width: 50px;
+   border: 1px solid black;
+   border-collapse: collapse;
+ }
+th{
+   resize:horizontal;
+   overflow:hidden;
+}
