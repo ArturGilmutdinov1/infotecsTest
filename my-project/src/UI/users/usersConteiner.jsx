@@ -2,6 +2,7 @@ import { connect } from "react-redux"
 import { getUsers } from "../../BLL/usersReducer"
 import Users from "./users"
 import React from "react"
+import Preloader from "../common/prelolder/prelolder";
 
 
 class UsersConteiner extends React.Component {
@@ -13,9 +14,8 @@ class UsersConteiner extends React.Component {
 
    render() {
       return <main>
-         {<Users
-            users={this.props.users}
-         />
+         {this.props.isFetching ? <Preloader />
+            : <Users users={this.props.users} />
          }
       </main>
    };
@@ -25,7 +25,8 @@ class UsersConteiner extends React.Component {
 
 const mapStateToProps = (state) => {
    return {
-      users: state.usersPage.users
+      users: state.usersPage.users,
+      isFetching: state.usersPage.isFetching
    }
 }
 

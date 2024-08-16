@@ -1,7 +1,6 @@
 import stl from './users.module.css';
 
 let Users = (props) => {
-   debugger
    return <table>
       <thead>
          <tr>
