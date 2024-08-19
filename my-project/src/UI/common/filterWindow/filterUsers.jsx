@@ -47,11 +47,14 @@ let FilterWindow = (props) => {
                         по убыванию
                      </label>
                   </div>
+                  <div>
+                     <label>
+                        <Field type="radio" name="picked" value="none" />
+                        без сортировки
+                     </label>
+                  </div>
                </div>
                <button type="submit" title="нажмите на меня два раза">сортировать</button>
-               <div>
-                  <button type='reset'>сброс сортировки</button>
-               </div>
             </div>
          </Form>
       </Formik>
