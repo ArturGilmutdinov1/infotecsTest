@@ -1,12 +1,9 @@
 import { Formik, Form, Field } from "formik"
-
+import stl from "./search.module.css"
 
 
 let SearchUsers = (props) => {
-
-
-
-   return <div>
+   return <div className={stl.searchUsers}>
       <Formik
          initialValues={{ searchValue: '' }}
          onSubmit={(values) => {

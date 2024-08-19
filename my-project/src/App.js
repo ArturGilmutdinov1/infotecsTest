@@ -1,11 +1,11 @@
 import './App.css';
-import Header from './UI/header/header';
+import HeaderConteiner from './UI/header/headerConteiner';
 import UsersConteiner from './UI/users/usersConteiner';
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <HeaderConteiner />
       <UsersConteiner />
     </div>
   );

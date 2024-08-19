@@ -3,14 +3,19 @@ import { usersApi } from "../API/usersApi";
 
 const SET_ALL_USERS = 'SET_ALL_USERS';
 const SET_CURRENT_PAGE = 'SET_CURRENT_PAGE';
-
+const SET_ASCENDING_USERS = 'SET_ASCENDING_USERS'
 
 const initialState = {
    users: [],
    isFetching: false,
+   valueFilter: {
+      valueKey: '',
+      picked: '',
+   }
 }
 
 const usersReducer = (state = initialState, action) => {
+   debugger
    switch (action.type) {
       case SET_ALL_USERS: {
          return { ...state, users: [...action.users] }
@@ -18,7 +23,15 @@ const usersReducer = (state = initialState, action) => {
       case SET_CURRENT_PAGE: {
          return { ...state, isFetching: action.isFetching }
       }
-
+      case SET_ASCENDING_USERS: {
+         return {
+            ...state,
+            valueFilter: {
+               valueKey: action.dataValue.dataCheketValue,
+               picked: action.dataValue.picked,
+            }
+         }
+      }
       default:
          return state;
    }
@@ -26,7 +39,7 @@ const usersReducer = (state = initialState, action) => {
 
 const setUsers = (users) => ({ type: SET_ALL_USERS, users })
 const toogleIsFetching = (isFetching) => ({ type: SET_CURRENT_PAGE, isFetching })
-
+const setSortAscendingUsers = (dataValue) => ({ type: SET_ASCENDING_USERS, dataValue })
 
 export const getUsers = () => async (dispatch) => {
    dispatch(toogleIsFetching(true));
@@ -55,6 +68,9 @@ export const setSearchUsers = (valueMessage) => async (dispatch) => {
    }
 }
 
+export const sortAscendingUsers = (dataSortUsers) => (dispatch) => {
+   dispatch(setSortAscendingUsers({ dataCheketValue: dataSortUsers.checked, picked: dataSortUsers.picked }));
+}
 
 export default usersReducer;
 

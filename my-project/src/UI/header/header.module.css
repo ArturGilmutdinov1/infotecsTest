@@ -1,5 +1,23 @@
 header{
    height: 50px;
    width: 100%;
-   background-color: cadetblue;
+   background-color: #1A2238;
+}
+.menu{
+   display: grid;
+   grid-template-columns: 260px 70px;
+   justify-content: space-between;
+   max-width: 1200px;
+   min-width: 260px;
+   margin: 0 auto;
+}
+.filter{
+   padding: 20px 0px;
+}
+.toggle{
+   color: rgb(255, 255, 255);
+   text-align: center;
+   font-weight: 500;
+   border: 2px solid rgb(255, 255, 255);
+   border-radius: 20px;
 }

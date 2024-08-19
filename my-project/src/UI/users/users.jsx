@@ -1,7 +1,9 @@
+
 import stl from './users.module.css';
 
 let Users = (props) => {
-   return <table>
+
+   return <table className={stl.tableUsers}>
       <thead>
          <tr>
             <th>ФИО</th>
@@ -12,7 +14,7 @@ let Users = (props) => {
          </tr>
       </thead>
       <tbody>
-         {props.users.map((users) => <tr key={users.id}>
+         {props.users.map((users) => <tr key={users.id} onClick={() => props.actionModalWindow(true, users)}>
             <td>{`${users.firstName} ${users.lastName} ${users.maidenName}`}</td>
             <td>{users.age}</td>
             <td>{users.gender}</td>
@@ -21,7 +23,6 @@ let Users = (props) => {
          </tr>)}
       </tbody>
    </table>
-
 }
 
 export default Users
