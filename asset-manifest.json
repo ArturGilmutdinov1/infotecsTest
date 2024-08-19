@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/infotecsTest/static/css/main.96864ded.css",
+    "main.js": "/infotecsTest/static/js/main.edf9470d.js",
+    "static/js/453.0a36081d.chunk.js": "/infotecsTest/static/js/453.0a36081d.chunk.js",
+    "static/media/Bean Eater-1s-200px.gif": "/infotecsTest/static/media/Bean Eater-1s-200px.53064f9ced64cfa8319b.gif",
+    "index.html": "/infotecsTest/index.html",
+    "main.96864ded.css.map": "/infotecsTest/static/css/main.96864ded.css.map",
+    "main.edf9470d.js.map": "/infotecsTest/static/js/main.edf9470d.js.map",
+    "453.0a36081d.chunk.js.map": "/infotecsTest/static/js/453.0a36081d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.96864ded.css",
+    "static/js/main.edf9470d.js"
+  ]
+}
