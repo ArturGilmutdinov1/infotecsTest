@@ -12,7 +12,7 @@ let SearchUsers = (props) => {
       >
          <Form>
             <Field id="searchValue" name="searchValue" placeholder="Поиск" />
-            <button type="submit"></button>
+            <button type="submit">поиск</button>
          </Form>
       </Formik>
    </div>

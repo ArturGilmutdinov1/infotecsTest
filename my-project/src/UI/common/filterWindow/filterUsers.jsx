@@ -48,7 +48,7 @@ let FilterWindow = (props) => {
                      </label>
                   </div>
                </div>
-               <button type="submit">сортировать</button>
+               <button type="submit" title="нажмите на меня два раза">сортировать</button>
                <div>
                   <button type='reset'>сброс сортировки</button>
                </div>
