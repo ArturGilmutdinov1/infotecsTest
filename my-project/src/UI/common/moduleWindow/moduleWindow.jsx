@@ -1,6 +1,6 @@
-
 import stl from './moduleWindow.module.css'
 
+//модальное окно
 let ModuleWindow = (props) => {
    return <div className={stl.moduleWindowBackround} onClick={() => {
       props.actionModalWindow(false, {})

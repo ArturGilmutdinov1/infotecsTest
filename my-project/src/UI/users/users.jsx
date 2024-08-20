@@ -1,6 +1,6 @@
-
 import stl from './users.module.css';
 
+//основная таблица
 let Users = (props) => {
 
    return <table className={stl.tableUsers}>

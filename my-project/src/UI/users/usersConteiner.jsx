@@ -8,11 +8,12 @@ import ModuleWindow from "../common/moduleWindow/moduleWindow";
 
 
 class UsersConteiner extends React.Component {
-
+   //после 1 рендера, с помощью данное метода жизненного цикла получаю пользователей
    componentDidMount() {
       this.props.getUsers();
    };
 
+   //данный ментод жизненного цикла сортирует массив пользователей 
    componentDidUpdate(prevProps) {
       const key = this.props.valueFilter.valueKey
       if (this.props.valueFilter !== prevProps.valueFilter) {

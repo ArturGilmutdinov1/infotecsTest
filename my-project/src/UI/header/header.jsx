@@ -4,6 +4,7 @@ import SearchConteiner from "../common/search/searchConteiner";
 import FilterWindow from "../common/filterWindow/filterUsers";
 
 let Header = (props) => {
+   //данный хук отвевачает за открытие окна фильтров
    const [toggle, setToggle] = useState(false)
    return <header>
       <div className={stl.menu}>

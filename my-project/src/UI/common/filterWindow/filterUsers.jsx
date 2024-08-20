@@ -1,6 +1,7 @@
 import { Field, Formik, Form, } from "formik"
 import stl from './filter.module.css'
 
+//окно фильтров (с помощью формика собираю данные и отправляю их в редюсер)
 let FilterWindow = (props) => {
    return <div onClick={e => e.stopPropagation()} >
       <Formik

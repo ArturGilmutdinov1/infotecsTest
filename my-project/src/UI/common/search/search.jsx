@@ -1,7 +1,7 @@
 import { Formik, Form, Field } from "formik"
 import stl from "./search.module.css"
 
-
+//компонент для запуска запроса с поиском по ключук и значению
 let SearchUsers = (props) => {
    return <div className={stl.searchUsers}>
       <Formik

@@ -30,6 +30,7 @@ const modalWindowReducer = (state = initialState, action) => {
 const toogleIsWindow = (isOpenWindow) => ({ type: ACTION_MODAL_WIMDOW, isOpenWindow })
 const setDataUsers = (dataUsers) => ({ type: SET_DATA_USERS, dataUsers })
 
+//здесь проприсана логика открытия модального окна(диспатчим функции, 1.которая открывает/закрывает окно 2.которая отправляет данные, которые отобразяться в модальном окне)
 export const actionModalWindow = (isOpen, dataUsers) => (dispatch) => {
    dispatch(toogleIsWindow(isOpen))
    dispatch(setDataUsers({ dataUsers }))
